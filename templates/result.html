@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        /* Resetting default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            align-items: center;
+            background-color: rgb(108, 131, 190); /* Beige background for the whole page */
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px; /* Added padding for better spacing */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main container styling */
+        .result-container {
+            background-color: #15172b;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 400px; /* Adjusted width for a centered content */
+            max-width: 90%;
+            color: #eee; /* Consistent text color */
+        }
+
+        /* Heading styling */
+        h1 {
+            color: #eee;
+            margin-bottom: 20px;
+            font-size: 36px;
+            font-weight: 600;
+        }
+
+        /* Paragraph styling */
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        /* Button styling */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #08d;
+            color: #eee;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #06b;
+        }
+
+        .button:active {
+            background-color: #04a;
+        }
+    </style>
+</head>
+<body>
+    <!-- Result Container -->
+    <div class="result-container">
+        <h1>Prediction Result</h1>
+        <p>The predicted average score for the student is: <strong>{{ prediction }}</strong></p>
+        <a href="/" class="button">Make another prediction</a>
+    </div>
+</body>
+</html>
